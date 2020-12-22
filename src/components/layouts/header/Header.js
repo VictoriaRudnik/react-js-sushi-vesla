@@ -8,8 +8,8 @@ import Search from "../../../img/search.png";
 
 export const Header = () => {
   return (
-    <header>
-      <div className="container_header">
+    <header className="container_header">
+      {/* //<div className="container_header"> */}
         <div>
           <img className="header_logo" src={Logo} />
         </div>
@@ -37,7 +37,7 @@ export const Header = () => {
           <img className="header__img" src={Language} />
           <img className="header__img" src={User} />
         </div>
-      </div>
+     {/* </div> */}
     </header>
   );
 };
