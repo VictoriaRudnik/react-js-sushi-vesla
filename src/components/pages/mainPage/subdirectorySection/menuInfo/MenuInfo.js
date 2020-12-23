@@ -30,7 +30,7 @@ export const MenuInfo = (props) => {
           -
         </button>
         {/* <img className="menu-info__button-counter" src={ImageButtonMinus}/> */}
-        <p className="menu-info__p-counter">{itemFromCart?.count || 1}</p>
+        <p className="menu-info__p-counter">{itemFromCart?.count || 0}</p>
         <button
           className="menu-info__button-minus"
           onClick={() => addItemToCart(itemFromCart || item)}

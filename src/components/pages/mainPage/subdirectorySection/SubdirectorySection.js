@@ -8,7 +8,7 @@ import {Footer} from "../../../layouts/footer/Footer"
 
 const menuItem = [
   { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90", id: 1 },
-  { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90", id: 2 },
+  { img: ImageNigiri, name: "Спайси текка маки", price: "2.90", id: 2 },
   { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90", id: 3 },
   { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90", id: 4 },
   { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90", id: 5 },
@@ -55,42 +55,41 @@ export const SubdirectorySection = (props) => {
         </div>
         <Footer />
       </div>
-      {!!cartItems?.length && (
-        <div className="main-page__container-basket">
-          <div className="subdirectory__basket-text">
-            <p className="subdirectory__p-basket-text">Корзина</p>
-          </div>
-          <div className="cart-items-container">
-            {cartItems.map((item, index) => (
-              <div key={index} className="cart-items__item-container">
-                <div className="cart-items__item-name">{item.name}</div>
-                <div className="cart-items__count-container">
-                  <div>{(item.price * item.count).toFixed(2)} руб</div>
-                  <div className="cart-items__container-counter">
-                    <button
-                      className="cart-items__button-plus"
-                      onClick={() => {
-                        removeItemFromCart(item);
-                      }}
-                    >
-                      -
-                    </button>
-                    {/* <img className="menu-info__button-counter" src={ImageButtonMinus}/> */}
-                    <p className="cart-items__p-counter">{item.count}</p>
-                    <button
-                      className="cart-items__button-minus"
-                      onClick={() => addItemToCart(item)}
-                    >
-                      +
-                    </button>
+        <div className="main-page__container-cart">
+          <div className="main-page__cart-sticky">
+            <div className="subdirectory__cart-text">
+              <p className="subdirectory__p-cart-text">Корзина</p>
+            </div>
+            <div className="cart-items-container">
+              {cartItems.map((item, index) => (
+                <div key={index} className="cart-items__item-container">
+                  <div className="cart-items__item-name">{item.name}</div>
+                  <div className="cart-items__count-container">
+                    <div>{(item.price * item.count).toFixed(2)} руб</div>
+                    <div className="cart-items__container-counter">
+                      <button
+                        className="cart-items__button-plus"
+                        onClick={() => {
+                          removeItemFromCart(item);
+                        }}
+                      >
+                        -
+                      </button>
+                      <p className="cart-items__p-counter">{item.count}</p>
+                      <button
+                        className="cart-items__button-minus"
+                        onClick={() => addItemToCart(item)}
+                      >
+                        +
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-            <button className="cart-order-button">Оформить заказ</button>
+              ))}
+              <button className="cart-order-button">Оформить заказ</button>
+            </div>
           </div>
         </div>
-      )}
     </div>
   );
 };

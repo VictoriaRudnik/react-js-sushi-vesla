@@ -1,3 +1,21 @@
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+  padding-top: 18px;
+}
+
+.footer__container-first {
+  width: 57%;
+}
+
+.footer__container-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
 .footer-address {
   margin-top: 43px;
   display: flex;
@@ -17,9 +35,39 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer__container-contact-text {
-  display:flex;
+  height: 60px;
+  display: flex;
   flex-direction: column;
+  /* align-items: space-between; */
+  justify-content: space-around;
+}
+
+.footer__img-logo {
+  height: 60px;
+  /* width: 20% */
+}
+
+.footer__p-contact-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer__p-additional-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.footer__p-address-text {
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
 }

@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 export const AdvertisementSlider = () => {
   const sliderSettings = {
     centerMode: true,
-    centerPadding: "100px",
+    centerPadding: "120px",
     focusOnSelect: true,
     infinite: true,
     slidesToShow: 1,

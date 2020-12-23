@@ -8,9 +8,14 @@
   width: 78%;
 }
 
-.main-page__container-basket {
+.main-page__container-cart {
   width: 20%;
   margin-left: 24px;
+}
+
+.main-page__cart-sticky {
+  position: sticky;
+  top: 120px;
 }
 
 .main-page__container-filters {
@@ -28,7 +33,7 @@
 }
 
 .main-page__container-subdirectory-item {
-  margin: 25px 0;
+  margin: 7px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,13 +89,13 @@
   margin-right: 10px;
 }
 
-.subdirectory__basket-text {
+.subdirectory__cart-text {
   height: 28px;
   display: flex;
   align-items: center;
 }
 
-.subdirectory__p-basket-text {
+.subdirectory__p-cart-text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -107,7 +112,7 @@
 .cart-order-button {
   height: 30px;
   width: 100%;
-  background-color: rgb(5, 196, 5);
+  background-color: #5DB300;
   color: white;
   display: flex;
   justify-content: center;
