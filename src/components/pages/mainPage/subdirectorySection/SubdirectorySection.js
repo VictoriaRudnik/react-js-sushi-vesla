@@ -3,7 +3,8 @@ import "./style.css";
 import ImageNigiri from "../../../../img/nigiri.png";
 import { MenuInfo } from "./menuInfo/MenuInfo";
 import ImageBaner from "../../../../img/banner.png";
-import ImageVector from "../../../../img/vector.png"
+import ImageVector from "../../../../img/vector.png";
+import {Footer} from "../../../layouts/footer/Footer"
 
 const menuItem = [
   { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90" },
@@ -25,9 +26,12 @@ export const SubdirectorySection = () => {
         <div className="main-page__container-filters">
           <p className="main-page__subdirectory-text">Раздел подкаталога</p>
           <div className="main-page__div-subdirectory">
-            <img className="main-page__img-subdirectory-filters" src={ImageVector}/>
-            <p className="main-page__p-subdirectory-text">Фильтры</p></div>
-          
+            <img
+              className="main-page__img-subdirectory-filters"
+              src={ImageVector}
+            />
+            <p className="main-page__p-subdirectory-text">Фильтры</p>
+          </div>
         </div>
         <div className="main-page__container-subdirectory-item">
           {menuItem.map((item, index) => (
@@ -42,6 +46,7 @@ export const SubdirectorySection = () => {
             <img className="main-page__img-subdirectory" src={ImageBaner} />
           </div>
         </div>
+        <Footer />
       </div>
       <div className="main-page__container-basket">
         <div className="subdirectory__basket-text">
