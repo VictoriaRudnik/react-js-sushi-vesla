@@ -1,8 +1,113 @@
 .carousel--wrapper {
-  width: 80%;
+  width: 100%;
   margin-top: 84px;
+  outline: none;
 }
 
 .carousel--item {
   width: 100%;
+  outline: none;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(106, 121, 201, 1);
+}
+
+.slick-slide {
+  border-right: 0;
+  transition: .2s all;
+}
+
+.main-page__container-information {
+  margin: 0 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-page__container-input-img {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+}
+
+.main-page__container-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #a1a1a1;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+}
+
+.main-page__input {
+  width: 90%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  
+}
+
+ .main-page__container-input-img {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+.main-page__img {
+  border-radius: 20px;
+  height: 75%;
+  margin-left: 3%;
+}
+ .main-page__container-delivery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 17%;
+ }
+.main-page__container-promocode, .main-page__container-coins, .main-page__button-coins {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.main-page__container-promocode {
+  width: 8%
+}
+.main-page__img-promocode {
+  margin-right: 8%;
+}
+.main-page__container-coins {
+  width: 28%;
+  justify-content: space-between;
+}
+
+ .main-page__p-promocode {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+ }
+
+ .main-page__img-coins {
+   height: 30px;
+ }
+
+ .main-page__button-coins {
+   width: 48%;
+   display: flex;
+   align-items:center;
+   justify-content:  center;
+  background: #FFFFFF;
+  box-shadow: -3px -3px 5px #FFFFFF, 3px 3px 10px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-color: white;
+  border-radius: 10px;
+  border-style: none;
+ }
+

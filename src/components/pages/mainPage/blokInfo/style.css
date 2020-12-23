@@ -1,0 +1,29 @@
+
+ .main-page_p-delivery {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.main-page_text-delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-page__img-delivery {
+  display: flex;
+  align-items:center;
+  margin-right: 8%;
+}
+
+.main-page__container-delivery-item {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ }
+
+ .main-page__img-coins {
+   margin-right: 8%;
+ }
