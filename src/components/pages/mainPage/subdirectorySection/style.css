@@ -1,0 +1,47 @@
+.main-page__container-subdirectory {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 3%;
+}
+
+.main-page__container-subdirectory-section {
+  width: 78%;
+}
+
+.main-page__container-basket {
+  width: 15%;
+}
+
+.main-page__container-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-page__subdirectory-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+.main-page__container-subdirectory-item {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.main-page__item-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}

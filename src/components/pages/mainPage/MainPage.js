@@ -15,19 +15,39 @@ import PresentImage from "../../../img/present.JPG";
 import { Button } from "./button/Button";
 import ImageDinner from "../../../img/menuDinner.png";
 import { MenuInfo } from "./menuInfo/MenuInfo";
-import ImageMaki from "../../../img/maki.png"
-import ImageUraMaki from "../../../img/uraMaki.png"
+import ImageMaki from "../../../img/maki.png";
+import ImageUraMaki from "../../../img/uraMaki.png";
+// import ImageNigiri from "../../../img/nigiri.png";
+import {SubdirectorySection} from "./subdirectorySection/SubdirectorySection"
+
 
 export const MainPage = () => {
   const sliderSettings = {
     focusOnSelect: true,
     infinite: true,
-    slidesToShow: 1.25,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
     //variableWidth: true,
     className: "carousel--container",
   };
+  const menuInfo = [
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageMaki, label: "Маки" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageUraMaki, label: "Ура маки" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+    { img: ImageDinner, label: "Обеденное меню" },
+  ];
 
   return (
     <div>
@@ -76,22 +96,12 @@ export const MainPage = () => {
         </div>
       </div>
       <div className="main-page__container-products">
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageMaki} label="Mаки"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageUraMaki} label="Ура маки"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
-         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+        {menuInfo.map((item) => (
+          <MenuInfo img={item.img} label={item.label} />
+        ))}
       </div>
+      <SubdirectorySection />
+     
     </div>
   );
 };

@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header className="container_header">
       {/* //<div className="container_header"> */}
-        <div>
+        <div className="header__container-logo">
           <img className="header_logo" src={Logo} />
         </div>
         <div className="container_menu">

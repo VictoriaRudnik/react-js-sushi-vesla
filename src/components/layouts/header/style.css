@@ -10,6 +10,11 @@
   height: 85px;
   background-color: #F8F9FC;
 }
+.header__container-logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
 .header_logo {
   height: 60px;
 }
@@ -27,7 +32,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 8%;
+  width: 10%;
 }
 
 .menu,
