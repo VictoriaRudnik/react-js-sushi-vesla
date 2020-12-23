@@ -95,3 +95,13 @@
 .main-page__container-products {
   margin-top: 45px;
 }
+
+.main-page__location-modal {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.main-page__location-description {
+  margin-left: 40px;
+}

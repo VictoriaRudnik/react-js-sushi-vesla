@@ -6,7 +6,8 @@ import Call from "../../../img/Call.png";
 import "./style.css";
 import Search from "../../../img/search.png";
 
-export const Header = () => {
+export const Header = (props) => {
+  const { setIsLocationModalVisible } = props;
   return (
     <header className="container_header">
       {/* //<div className="container_header"> */}
@@ -35,7 +36,7 @@ export const Header = () => {
         </div>
         <div className="container_login">
           <img className="header__img" src={Language} />
-          <img className="header__img" src={User} />
+          <img className="header__img" src={User} onClick={() => setIsLocationModalVisible(true)}/>
         </div>
      {/* </div> */}
     </header>

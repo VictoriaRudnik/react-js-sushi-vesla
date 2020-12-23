@@ -17,9 +17,11 @@ import ImageUraMaki from "../../../img/uraMaki.png";
 import { SubdirectorySection } from "./subdirectorySection/SubdirectorySection";
 import { AdvertisementSlider } from "./advertisementSlider/AdvertisementSlider";
 import ImageBaner from "../../../img/banner.png";
+import { Modal } from "../../common/modal";
 
 export const MainPage = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [isLocationModalVisible, setIsLocationModalVisible] = useState(false);
 
   const addItemToCart = (item) => {
     const isItemAlreadyInCart = cartItems.find(
@@ -83,7 +85,7 @@ export const MainPage = () => {
 
   return (
     <div>
-      <Header />
+      <Header setIsLocationModalVisible={setIsLocationModalVisible} />
       <AdvertisementSlider />
       <div className="main-page__container-information">
         <div className="main-page__container-input-img">
@@ -122,6 +124,21 @@ export const MainPage = () => {
         addItemToCart={addItemToCart}
         removeItemFromCart={removeItemFromCart}
       />
+      <Modal
+        isVisible={isLocationModalVisible}
+        setIsVisible={setIsLocationModalVisible}
+        title={"Ваша локация"}
+      >
+        <div className="main-page__location-modal">
+          <div>Вставь здесь картинку машины</div>
+          <div className="main-page__location-description">
+            <div>Ваш Адрес:</div>
+            <div>ул.Тимирязева, 72/1</div>
+            <div>Время доставки:</div>
+            <div>через 95 минут (в 12.28)</div>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };
