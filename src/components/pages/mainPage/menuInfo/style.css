@@ -1,0 +1,25 @@
+.menu-info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
+  width: 6%;
+  height: 130px;
+}
+
+.menu-info__img {
+  padding: 20% 8%;
+  width: 90%;
+}
+
+.menu-info__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  padding: 0 6% 10%;
+}

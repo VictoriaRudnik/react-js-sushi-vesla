@@ -9,9 +9,14 @@ import SearchGroup from "../../../img/search-group.png";
 import Clock from "../../../img/clock.png";
 import Bike from "../../../img/bike.png";
 import { BlockInfo } from "./blokInfo/BlockInfo";
-import Promocode from "../../../img/discount.png"
-import CoinsImage from "../../../img/coins.JPG"
-import PresentImage from "../../../img/present.JPG"
+import Promocode from "../../../img/discount.png";
+import CoinsImage from "../../../img/coins.JPG";
+import PresentImage from "../../../img/present.JPG";
+import { Button } from "./button/Button";
+import ImageDinner from "../../../img/menuDinner.png";
+import { MenuInfo } from "./menuInfo/MenuInfo";
+import ImageMaki from "../../../img/maki.png"
+import ImageUraMaki from "../../../img/uraMaki.png"
 
 export const MainPage = () => {
   const sliderSettings = {
@@ -62,19 +67,30 @@ export const MainPage = () => {
           <BlockInfo img={Bike} deliveryType="Доставка" deliveryTime="60 мин" />
         </div>
         <div className="main-page__container-promocode">
-          <img className="main-page__img-promocode" src={Promocode}/>
+          <img className="main-page__img-promocode" src={Promocode} />
           <p className="main-page__p-promocode">Промокод</p>
         </div>
         <div className="main-page__container-coins">
-          <button className="main-page__button-coins">
-            <img className="main-page__img-coins" src={CoinsImage}></img>
-            <p>Суши-койны</p>
-          </button>
-          <button className="main-page__button-coins">
-            <img className="main-page__img-coins" src={PresentImage}></img>
-            <p>Подарки</p>
-          </button>
+          <Button img={CoinsImage} label="Суши-койны" />
+          <Button img={PresentImage} label="Подарки" />
         </div>
+      </div>
+      <div className="main-page__container-products">
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageMaki} label="Mаки"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageUraMaki} label="Ура маки"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
+         <MenuInfo img={ImageDinner} label="Обеденное меню"/>
       </div>
     </div>
   );

@@ -16,10 +16,11 @@
 
 .slick-slide {
   border-right: 0;
-  transition: .2s all;
+  transition: 0.2s all;
 }
 
-.main-page__container-information {
+.main-page__container-information,
+.main-page__container-products {
   margin: 0 3%;
   display: flex;
   flex-direction: row;
@@ -50,34 +51,36 @@
   border-radius: 20px;
   outline: none;
   border: none;
-  
 }
 
- .main-page__container-input-img {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
- }
+.main-page__container-input-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .main-page__img {
   border-radius: 20px;
   height: 75%;
   margin-left: 3%;
 }
- .main-page__container-delivery {
+.main-page__container-delivery {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 17%;
- }
-.main-page__container-promocode, .main-page__container-coins, .main-page__button-coins {
+}
+.main-page__container-promocode,
+.main-page__container-coins,
+.main-page__button-coins,
+.main-page__container-products {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
 }
 
 .main-page__container-promocode {
-  width: 8%
+  width: 8%;
 }
 .main-page__img-promocode {
   margin-right: 8%;
@@ -87,27 +90,14 @@
   justify-content: space-between;
 }
 
- .main-page__p-promocode {
+.main-page__p-promocode {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
- }
+}
 
- .main-page__img-coins {
-   height: 30px;
- }
-
- .main-page__button-coins {
-   width: 48%;
-   display: flex;
-   align-items:center;
-   justify-content:  center;
-  background: #FFFFFF;
-  box-shadow: -3px -3px 5px #FFFFFF, 3px 3px 10px rgba(0, 0, 0, 0.15);
-  outline: none;
-  border-color: white;
-  border-radius: 10px;
-  border-style: none;
- }
+.main-page__container-products {
+  margin-top: 30px;
+}
 
