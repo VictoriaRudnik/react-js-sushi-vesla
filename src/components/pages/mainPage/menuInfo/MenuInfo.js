@@ -8,5 +8,6 @@ export const MenuInfo = (props) => {
       <img className="menu-info__img" src={img} alt="menu" />
       <p className="menu-info__label">{label}</p>
     </div>
+    
   );
 };

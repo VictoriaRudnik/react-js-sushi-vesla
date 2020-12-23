@@ -1,10 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Header } from "../../layouts/header/Header";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import SliderImage from "../../../img/slider.png";
 import SearchGroup from "../../../img/search-group.png";
 import Clock from "../../../img/clock.png";
 import Bike from "../../../img/bike.png";
@@ -18,19 +14,11 @@ import { MenuInfo } from "./menuInfo/MenuInfo";
 import ImageMaki from "../../../img/maki.png";
 import ImageUraMaki from "../../../img/uraMaki.png";
 // import ImageNigiri from "../../../img/nigiri.png";
-import {SubdirectorySection} from "./subdirectorySection/SubdirectorySection"
-
+import { SubdirectorySection } from "./subdirectorySection/SubdirectorySection";
+import { AdvertisementSlider } from "./advertisementSlider/AdvertisementSlider";
+import ImageBaner from "../../../img/banner.png";
 
 export const MainPage = () => {
-  const sliderSettings = {
-    focusOnSelect: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    speed: 500,
-    //variableWidth: true,
-    className: "carousel--container",
-  };
   const menuInfo = [
     { img: ImageDinner, label: "Обеденное меню" },
     { img: ImageMaki, label: "Маки" },
@@ -52,22 +40,7 @@ export const MainPage = () => {
   return (
     <div>
       <Header />
-      <div className="carousel--wrapper">
-        <Slider {...sliderSettings}>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-        </Slider>
-      </div>
+      <AdvertisementSlider />
       <div className="main-page__container-information">
         <div className="main-page__container-input-img">
           <div className="main-page__container-input">
@@ -96,12 +69,12 @@ export const MainPage = () => {
         </div>
       </div>
       <div className="main-page__container-products">
-        {menuInfo.map((item) => (
-          <MenuInfo img={item.img} label={item.label} />
+        {menuInfo.map((item, index) => (
+          <MenuInfo img={item.img} label={item.label} key={index} />
         ))}
       </div>
       <SubdirectorySection />
-     
+      
     </div>
   );
 };

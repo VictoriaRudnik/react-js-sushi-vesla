@@ -1,0 +1,10 @@
+.carousel--wrapper {
+  width: 98%;
+  margin-top: 85px;
+  outline: none;
+}
+
+.carousel--item {
+  width: 100%;
+  outline: none;
+}

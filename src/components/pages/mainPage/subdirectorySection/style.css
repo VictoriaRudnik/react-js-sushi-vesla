@@ -1,7 +1,7 @@
 .main-page__container-subdirectory {
   display: flex;
   flex-direction: row;
-  margin: 20px 3%;
+  margin: 0 3%;
 }
 
 .main-page__container-subdirectory-section {
@@ -17,6 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 41px 0 21px;
 }
 .main-page__subdirectory-text {
   font-family: Montserrat;
@@ -45,3 +46,25 @@
   line-height: 17px;
   text-align: center;
 }
+
+.main-page__img-subdirectory {
+  width: 100%;
+}
+
+.main-page__img-subdirectory-item {
+
+  background: #ffffff;
+  /* border: 1px solid rgba(0, 0, 0, 0.05); */
+  box-sizing: border-box;
+  border-radius: 16.3628px;
+  width: 32%;
+  height: 326px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* padding: 19px 1% 17px; */
+}
+

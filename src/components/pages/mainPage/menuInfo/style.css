@@ -10,16 +10,18 @@
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
   width: 6%;
   height: 130px;
+  padding: 16px 0 22px;
 }
 
 .menu-info__img {
-  padding: 20% 8%;
-  width: 90%;
+  width: 100%;
+  height: 170px;
 }
 
 .menu-info__label {
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  padding: 0 6% 10%;
+  /* padding: 0 6%; */
+  margin-top: 14px;
 }

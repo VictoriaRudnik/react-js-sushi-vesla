@@ -1,13 +1,4 @@
-.carousel--wrapper {
-  width: 98%;
-  margin-top: 85px;
-  outline: none;
-}
 
-.carousel--item {
-  width: 100%;
-  outline: none;
-}
 
 .slick-prev:before,
 .slick-next:before {
@@ -26,6 +17,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-page__container-information {
+  margin: 40px 3% 0;
 }
 
 .main-page__container-input-img {
@@ -98,9 +93,5 @@
 }
 
 .main-page__container-products {
-  margin-top: 30px;
+  margin-top: 45px;
 }
-
-
-
-
