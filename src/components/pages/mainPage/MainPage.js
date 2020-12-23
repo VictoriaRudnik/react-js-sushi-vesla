@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Header } from "../../layouts/header/Header";
 import SearchGroup from "../../../img/search-group.png";
@@ -19,6 +19,50 @@ import { AdvertisementSlider } from "./advertisementSlider/AdvertisementSlider";
 import ImageBaner from "../../../img/banner.png";
 
 export const MainPage = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addItemToCart = (item) => {
+    const isItemAlreadyInCart = cartItems.find(
+      (cartItem) => cartItem.id === item.id
+    );
+
+    if (isItemAlreadyInCart) {
+      const updatedCartItems = cartItems.map((cartItem) => {
+        if (cartItem.id === item.id) {
+          return {
+            ...cartItem,
+            count: cartItem.count + 1,
+          };
+        }
+        return cartItem;
+      });
+      setCartItems(updatedCartItems);
+    } else {
+      const newItem = {
+        ...item,
+        count: 1,
+      };
+      setCartItems([...cartItems, newItem]);
+    }
+  };
+
+  const removeItemFromCart = (item) => {
+    if (item.count > 1) {
+      const updatedCartItems = cartItems.map((cartItem) => {
+        if (cartItem.id === item.id) {
+          return {
+            ...cartItem,
+            count: cartItem.count - 1,
+          };
+        }
+        return cartItem;
+      });
+      setCartItems(updatedCartItems);
+    } else {
+      setCartItems(cartItems.filter((cartItem) => cartItem.id !== item.id));
+    }
+  };
+
   const menuInfo = [
     { img: ImageDinner, label: "Обеденное меню" },
     { img: ImageMaki, label: "Маки" },
@@ -73,8 +117,11 @@ export const MainPage = () => {
           <MenuInfo img={item.img} label={item.label} key={index} />
         ))}
       </div>
-      <SubdirectorySection />
-      
+      <SubdirectorySection
+        cartItems={cartItems}
+        addItemToCart={addItemToCart}
+        removeItemFromCart={removeItemFromCart}
+      />
     </div>
   );
 };
