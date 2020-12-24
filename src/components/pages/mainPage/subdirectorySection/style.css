@@ -175,6 +175,10 @@
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
+.cart-items__button-minus, .cart-items__button-plus:hover {
+  cursor: pointer;
+}
+
 .cart-items__p-counter {
   /* align-self: flex-end; */
   margin: 0 20%;
