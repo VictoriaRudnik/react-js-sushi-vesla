@@ -47,6 +47,11 @@
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
+.menu-info__button-plus, .menu-info__button-minus:hover {
+  cursor: pointer;
+}
+
+
 .menu-info__button-minus {
   height: 20px;
   border-radius: 50%;

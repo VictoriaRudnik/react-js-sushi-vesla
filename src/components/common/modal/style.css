@@ -27,3 +27,14 @@
   justify-content: space-between;
   flex-direction: row
 }
+
+.modal__closer:hover{
+cursor: pointer;
+}
+
+.modal__title {
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+}

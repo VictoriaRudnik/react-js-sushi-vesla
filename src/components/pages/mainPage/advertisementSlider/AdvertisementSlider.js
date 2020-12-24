@@ -4,6 +4,7 @@ import SliderImage from "../../../../img/slider.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ImageWithLazyLoad } from "../../../ImageWithLazyLoad";
 
 export const AdvertisementSlider = () => {
   const sliderSettings = {
@@ -14,25 +15,22 @@ export const AdvertisementSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    //variableWidth: true,
     className: "carousel--container",
   };
-  return(
-<div className="carousel--wrapper">
-        <Slider {...sliderSettings}>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-          <div>
-            <img className="carousel--item" src={SliderImage}></img>
-          </div>
-        </Slider>
-      </div>
-  )
-}
+
+  return (
+    <div className="carousel--wrapper">
+      <Slider {...sliderSettings}>
+        <div>
+          <img className="carousel--item" src={SliderImage}></img>
+        </div>
+        <div>
+          <img className="carousel--item" src={SliderImage}></img>
+        </div>
+        <div>
+          <img className="carousel--item" src={SliderImage}></img>
+        </div>
+      </Slider>
+    </div>
+  );
+};

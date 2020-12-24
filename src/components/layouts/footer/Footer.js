@@ -12,8 +12,9 @@ export const Footer = () => {
           </div>
           <div className="footer__container-contact-text">
             <p className="footer__p-contact-text">
-              Прием заказов: +375 29 321 00 00, +375 33 321 00 00
+              Прием заказов: +375 29 3210000, +375 33 3210000
             </p>
+            {/* <p className="footer__p-contact-text">+375 33 321 00 00</p> */}
             <p className="footer__p-contact-text">
               E-mail: feedback@sushivesla.by
             </p>
@@ -34,6 +35,11 @@ export const Footer = () => {
           </p>
           <p>г.Минск, пр. Партизанский, 150а ТЦ "Момо" (10.00-23.00)</p>
           <p>г.Минск, пр. Победителей, 9 ТРЦ "Galleria Minsk" (10.00-22.00)</p>
+        </div>
+        <div>Подробнее условия оплаты и доставки</div>
+        <div>
+          <p>© 2007- 2020 "СУШИ ВЕСЛА".</p>
+          <p>Разработка сайта - Gik Media</p>
         </div>
       </div>
       <div className="footer__container-second">

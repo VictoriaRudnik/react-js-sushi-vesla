@@ -65,7 +65,7 @@ export const SubdirectorySection = (props) => {
                 <div key={index} className="cart-items__item-container">
                   <div className="cart-items__item-name">{item.name}</div>
                   <div className="cart-items__count-container">
-                    <div>{(item.price * item.count).toFixed(2)} руб</div>
+                    <div className="cart-items__count-price">{(item.price * item.count).toFixed(2)} руб</div>
                     <div className="cart-items__container-counter">
                       <button
                         className="cart-items__button-plus"

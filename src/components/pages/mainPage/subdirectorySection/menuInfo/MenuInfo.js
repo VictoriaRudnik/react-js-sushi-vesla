@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
-import ImageButtonMinus from "../../../../../img/minusButton.png";
+import {ImageWithLazyLoad} from "../../../../ImageWithLazyLoad"
+
 
 export const MenuInfo = (props) => {
   const {
@@ -12,9 +13,12 @@ export const MenuInfo = (props) => {
   } = props;
 
   const itemFromCart = cartItems.find((cartItem) => cartItem.id === item.id);
+
+  //const image = {img: SliderImage, alt: "image", width: "100%"}
   return (
     <div className="main-page__subdirectory-item">
-      <img className="menu-info__img" src={img} />
+      {/* <img className="menu-info__img" src={img} /> */}
+      <ImageWithLazyLoad image={{src:img, alt: "image", width: "100%",height: "170px"}}/>
       <p className="main-page__item-text">{name}</p>
       <p className="menu-info__p-price">
         <span className="menu-info__span-price">{price}</span> руб. за порцию

@@ -36,7 +36,7 @@ export const Header = (props) => {
         </div>
         <div className="container_login">
           <img className="header__img" src={Language} />
-          <img className="header__img" src={User} onClick={() => setIsLocationModalVisible(true)}/>
+          <img className="header__img-focus" src={User} onClick={() => setIsLocationModalVisible(true)}/>
         </div>
      {/* </div> */}
     </header>

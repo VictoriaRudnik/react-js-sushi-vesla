@@ -13,16 +13,17 @@ import ImageDinner from "../../../img/menuDinner.png";
 import { MenuInfo } from "./menuInfo/MenuInfo";
 import ImageMaki from "../../../img/maki.png";
 import ImageUraMaki from "../../../img/uraMaki.png";
-// import ImageNigiri from "../../../img/nigiri.png";
 import { SubdirectorySection } from "./subdirectorySection/SubdirectorySection";
 import { AdvertisementSlider } from "./advertisementSlider/AdvertisementSlider";
-import ImageBaner from "../../../img/banner.png";
 import { Modal } from "../../common/modal";
+import {ImageWithLazyLoad} from "../../ImageWithLazyLoad"
+import ImageCar from "../../../img/car.JPG"
 
 export const MainPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [isLocationModalVisible, setIsLocationModalVisible] = useState(false);
 
+  
   const addItemToCart = (item) => {
     const isItemAlreadyInCart = cartItems.find(
       (cartItem) => cartItem.id === item.id
@@ -124,18 +125,21 @@ export const MainPage = () => {
         addItemToCart={addItemToCart}
         removeItemFromCart={removeItemFromCart}
       />
+       
       <Modal
         isVisible={isLocationModalVisible}
         setIsVisible={setIsLocationModalVisible}
         title={"Ваша локация"}
       >
         <div className="main-page__location-modal">
-          <div>Вставь здесь картинку машины</div>
+          <div>
+            <img className="main-page__modal-img" alt="car" src={ImageCar}/>
+          </div>
           <div className="main-page__location-description">
-            <div>Ваш Адрес:</div>
-            <div>ул.Тимирязева, 72/1</div>
-            <div>Время доставки:</div>
-            <div>через 95 минут (в 12.28)</div>
+            <div className="main-page__modal-text">Ваш Адрес:</div>
+            <div className="main-page__modal-text-bold">ул.Тимирязева, 72/1</div>
+            <div className="main-page__modal-text">Время доставки:</div>
+            <div className="main-page__modal-text-bold">через 95 минут (в 12.28)</div>
           </div>
         </div>
       </Modal>
