@@ -5,12 +5,12 @@
 .main-page__button-coins {
   width: 48%;
   display: flex;
-  align-items:center;
-  justify-content:  center;
- background: #FFFFFF;
- box-shadow: -3px -3px 5px #FFFFFF, 3px 3px 10px rgba(0, 0, 0, 0.15);
- outline: none;
- border-color: white;
- border-radius: 10px;
- border-style: none;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-color: white;
+  border-radius: 10px;
+  border-style: none;
 }

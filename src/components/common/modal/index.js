@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import ImageCloser from "../../../img/closer.png"
-
+import ImageCloser from "../../../img/closer.png";
 
 export const Modal = (props) => {
   const { isVisible, setIsVisible, children, title } = props;
@@ -13,7 +12,7 @@ export const Modal = (props) => {
             <div />
             <div className="modal__title">{title}</div>
             <div className="modal__closer" onClick={() => setIsVisible(false)}>
-              <img alt="close" src={ImageCloser}/>
+              <img alt="close" src={ImageCloser} />
             </div>
           </div>
           {children}

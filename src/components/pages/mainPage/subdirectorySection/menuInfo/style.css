@@ -4,6 +4,7 @@
   box-sizing: border-box;
   border-radius: 16.3628px;
   width: 15%;
+  min-width: 150px;
   height: 340px;
   display: flex;
   flex-direction: column;
@@ -43,21 +44,21 @@
   border: 1.5px solid white;
   color: white;
   outline: none;
-  background-color: #E31E24;
+  background-color: #e31e24;
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.menu-info__button-plus, .menu-info__button-minus:hover {
+.menu-info__button-plus,
+.menu-info__button-minus:hover {
   cursor: pointer;
 }
-
 
 .menu-info__button-minus {
   height: 20px;
   border-radius: 50%;
   border: 1.5px solid white;
   outline: none;
-  background-color: #5DB300;
+  background-color: #5db300;
   color: white;
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
@@ -71,5 +72,4 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 21px;
 }

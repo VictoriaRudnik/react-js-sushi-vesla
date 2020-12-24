@@ -99,11 +99,19 @@
   height: 40px;
 }
 
-
 .header__img-search {
   height: 15px;
 }
 
 .header__img-focus:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .menu {
+    font-size: 11px;
+  }
+  .header__p-number {
+    font-size: 11px;
+  }
 }

@@ -9,8 +9,13 @@
   border-radius: 20px;
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
   width: 6%;
+  min-width: 60px;
   height: 130px;
   padding: 16px 0 22px;
+  /* margin-top: 21px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px; */
 }
 
 .menu-info__img {

@@ -1,5 +1,4 @@
-
- .main-page_p-delivery {
+.main-page_p-delivery {
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -14,16 +13,16 @@
 
 .main-page__img-delivery {
   display: flex;
-  align-items:center;
+  align-items: center;
   margin-right: 8%;
 }
 
 .main-page__container-delivery-item {
- display: flex;
- flex-direction: row;
- align-items: center;
- }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
- .main-page__img-coins {
-   margin-right: 8%;
- }
+.main-page__img-coins {
+  margin-right: 8%;
+}

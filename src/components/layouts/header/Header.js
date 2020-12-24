@@ -26,13 +26,11 @@ export const Header = (props) => {
         <div className="header_container-number">
           <a className="header__p-number" href="tel:+375293210000">
             <img className="header__img" src={Call} />
-            
           </a>
           <a className="header__p-number" href="tel:+375293210000">
-            
             <p>+375 (29) 321 00 00</p>
           </a>
-          
+
           {/* <p className="header__p-number">+375 (29) 321 00 00</p> */}
         </div>
         <div className="header__container-input-img">

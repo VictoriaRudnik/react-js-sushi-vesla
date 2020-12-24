@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 export const BlockInfo = (props) => {
   const { img, deliveryType, deliveryTime } = props;
@@ -9,8 +9,12 @@ export const BlockInfo = (props) => {
         <img src={img}></img>
       </div>
       <div className="main-page_text-delivery">
-    <div><p className="main-page_p-delivery">{deliveryType}</p></div>
-     <div><p className="main-page_p-delivery">{deliveryTime}</p></div>  
+        <div>
+          <p className="main-page_p-delivery">{deliveryType}</p>
+        </div>
+        <div>
+          <p className="main-page_p-delivery">{deliveryTime}</p>
+        </div>
       </div>
     </div>
   );
