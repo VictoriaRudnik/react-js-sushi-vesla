@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import { ImageWithLazyLoad } from "../../../../ImageWithLazyLoad";
+import { PlusButton } from "../../../../common/plusButton";
+import { MinusButton } from "../../../../common/minusButton";
 
 export const MenuInfo = (props) => {
   const {
@@ -15,7 +17,6 @@ export const MenuInfo = (props) => {
 
   return (
     <div className="main-page__subdirectory-item">
-      {/* <img className="menu-info__img" src={img} /> */}
       <ImageWithLazyLoad
         image={{ src: img, alt: "image", width: "170px", height: "170px" }}
       />
@@ -25,22 +26,15 @@ export const MenuInfo = (props) => {
         (1шт)
       </p>
       <div className="menu-info__container-counter">
-        <button
-          className="menu-info__button-plus"
-          onClick={() => {
+        <MinusButton
+          handleClick={() => {
             removeItemFromCart(itemFromCart || item);
           }}
-        >
-          -
-        </button>
-        {/* <img className="menu-info__button-counter" src={ImageButtonMinus}/> */}
+        />
+
         <p className="menu-info__p-counter">{itemFromCart?.count || 0}</p>
-        <button
-          className="menu-info__button-minus"
-          onClick={() => addItemToCart(itemFromCart || item)}
-        >
-          +
-        </button>
+
+        <PlusButton handleClick={() => addItemToCart(itemFromCart || item)} />
       </div>
     </div>
   );

@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F8F9FC;
+  background: #f8f9fc;
   height: 340px;
   margin-bottom: 12px;
 }
@@ -100,15 +100,15 @@
 }
 
 .cart-items-container {
-  background-color: white;
+  background-color: #f8f9fc;
   border-radius: 10px;
-  box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
-  padding: 10px;
+  box-shadow: -10px -10px 10px #ffffff, 10px 10px 10px rgba(0, 0, 0, 0.05);
+  padding: 15px;
   margin-top: 21px;
 }
 
 .cart-order-button {
-  height: 30px;
+  height: 50px;
   width: 100%;
   background-color: #5db300;
   color: white;
@@ -118,13 +118,20 @@
   border-radius: 10px;
   outline: none;
   border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .cart-items__item-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .cart-items__item-name {
@@ -136,7 +143,11 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.cart-items__count-price {
+  margin-bottom: 6px;
 }
 
 .cart-items__count-container {
@@ -152,31 +163,19 @@
   justify-content: flex-end;
 }
 
-.cart-items__button-plus {
-  height: 20px;
-  border-radius: 50%;
-  border: 1.5px solid white;
-  color: white;
-  outline: none;
-  background-color: #e31e24;
-  box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.cart-items__button-minus {
-  height: 20px;
-  border-radius: 50%;
-  border: 1.5px solid white;
-  outline: none;
-  background-color: #5db300;
-  color: white;
-  box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.cart-items__button-minus, .cart-items__button-plus:hover {
-  cursor: pointer;
-}
-
 .cart-items__p-counter {
-  /* align-self: flex-end; */
-  margin: 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.cart-items__item-weight {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.cart-order-button-img {
+  margin-right: 8px;
 }

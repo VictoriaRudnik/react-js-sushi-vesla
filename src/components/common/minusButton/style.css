@@ -1,0 +1,37 @@
+.menu-info__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+.menu-info__button-line {
+  width: 33px;
+  border-radius: 50%;
+  border: 2.5px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-info__button-minus {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 2.5px solid #e31e24;
+  color: #e31e24;
+  outline: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.5px;
+}
+
+.menu-info__button-minus:hover {
+  cursor: pointer;
+}

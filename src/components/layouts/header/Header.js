@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../../img/logo.JPG";
 import ImageLogo from "../../../img/logo.png"
 import ImageLogoSign from "../../../img/logo1.png"
 import Language from "../../../img/Language.png";

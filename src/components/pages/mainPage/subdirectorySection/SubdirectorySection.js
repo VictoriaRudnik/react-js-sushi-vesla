@@ -5,6 +5,9 @@ import { MenuInfo } from "./menuInfo/MenuInfo";
 import ImageBaner from "../../../../img/banner.png";
 import ImageVector from "../../../../img/vector.png";
 import { Footer } from "../../../layouts/footer/Footer";
+import { MinusButton } from "../../../common/minusButton/index";
+import { PlusButton } from "../../../common/plusButton/index";
+import CartImage from "../../../../img/cart.png";
 
 const menuItem = [
   { img: ImageNigiri, name: "Нигири с тунцом опаленным", price: "2.90", id: 1 },
@@ -63,32 +66,32 @@ export const SubdirectorySection = (props) => {
           <div className="cart-items-container">
             {cartItems.map((item, index) => (
               <div key={index} className="cart-items__item-container">
-                <div className="cart-items__item-name">{item.name}</div>
+                <div className="cart-items__item-name">
+                  <div>{item.name}</div>
+                  <div className="cart-items__item-weight">(10 шт - 554гр)</div>
+                </div>
                 <div className="cart-items__count-container">
                   <div className="cart-items__count-price">
                     {(item.price * item.count).toFixed(2)} руб
                   </div>
                   <div className="cart-items__container-counter">
-                    <button
-                      className="cart-items__button-plus"
-                      onClick={() => {
+                    <MinusButton
+                      handleClick={() => {
                         removeItemFromCart(item);
                       }}
-                    >
-                      -
-                    </button>
+                    />
                     <p className="cart-items__p-counter">{item.count}</p>
-                    <button
-                      className="cart-items__button-minus"
-                      onClick={() => addItemToCart(item)}
-                    >
-                      +
-                    </button>
+
+                    <PlusButton
+                      handleClick={() => {
+                        addItemToCart(item);
+                      }}
+                    />
                   </div>
                 </div>
               </div>
             ))}
-            <button className="cart-order-button">Оформить заказ</button>
+            <button className="cart-order-button"> <img className="cart-order-button-img" src={CartImage} alt="cart"/>Оформить заказ</button>
           </div>
         </div>
       </div>
