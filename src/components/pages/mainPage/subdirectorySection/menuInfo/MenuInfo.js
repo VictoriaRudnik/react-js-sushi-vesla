@@ -31,9 +31,7 @@ export const MenuInfo = (props) => {
             removeItemFromCart(itemFromCart || item);
           }}
         />
-
         <p className="menu-info__p-counter">{itemFromCart?.count || 0}</p>
-
         <PlusButton handleClick={() => addItemToCart(itemFromCart || item)} />
       </div>
     </div>

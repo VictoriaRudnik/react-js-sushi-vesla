@@ -40,6 +40,10 @@
 
 .menu-info__p-counter {
   margin: 0 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .menu-info__container-counter {

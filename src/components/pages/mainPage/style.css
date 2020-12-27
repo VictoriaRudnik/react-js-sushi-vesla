@@ -41,7 +41,8 @@
 .main-page__input {
   width: 100%;
   border-radius: 20px;
-  background: #F8F9FC; 
+  color: #a1a1a1;
+  background: #f8f9fc;
   outline: none;
   border: none;
 }
@@ -90,7 +91,6 @@
   margin-right: 8%;
 }
 .main-page__container-coins {
-  /* width: 28%; */
   min-width: 250px;
   justify-content: space-between;
 }

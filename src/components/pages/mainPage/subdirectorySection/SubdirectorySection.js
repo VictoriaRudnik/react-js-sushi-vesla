@@ -91,7 +91,15 @@ export const SubdirectorySection = (props) => {
                 </div>
               </div>
             ))}
-            <button className="cart-order-button"> <img className="cart-order-button-img" src={CartImage} alt="cart"/>Оформить заказ</button>
+            <button className="cart-order-button">
+              {" "}
+              <img
+                className="cart-order-button-img"
+                src={CartImage}
+                alt="cart"
+              />
+              Оформить заказ
+            </button>
           </div>
         </div>
       </div>

@@ -17,11 +17,12 @@
   margin-left: 12px;
 }
 
-.button_label {
+.button__label {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+  line-height: 16px;
 }
 
 .button_container-image {
@@ -30,5 +31,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }

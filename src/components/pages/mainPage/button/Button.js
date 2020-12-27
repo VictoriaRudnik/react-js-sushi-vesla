@@ -6,8 +6,9 @@ export const Button = (props) => {
 
   return (
     <button className="main-page__button-coins">
-      <div className="button_container-image"> <img className="main-page__img-coins" src={img}></img></div>
-     
+      <div className="button_container-image">
+        <img className="main-page__img-coins" src={img}></img>
+      </div>
       <p className="button__label">{label}</p>
     </button>
   );

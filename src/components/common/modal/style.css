@@ -14,7 +14,7 @@
 .modal__content {
   min-width: 400px;
   min-height: 250px;
-  background-color: white;
+  background-color: #f8f9fc;
   border-radius: 10px;
   padding: 30px;
   box-shadow: -3px -3px 5px #ffffff, 3px 3px 10px rgba(0, 0, 0, 0.15);

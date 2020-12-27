@@ -12,10 +12,6 @@
   min-width: 60px;
   height: 160px;
   padding: 16px 8px 15px;
-  /* margin-top: 21px;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 10px; */
 }
 
 .menu-info__label {
@@ -23,7 +19,6 @@
   font-weight: 400;
   font-size: 12px;
   text-align: center;
-  /*  */
 }
 
 .menu-info__container-label {
@@ -34,10 +29,9 @@
   height: 30px;
 }
 
-.menu-info__container_img{
+.menu-info__container_img {
   width: 85px;
   height: 85px;
   display: flex;
   align-items: center;
-  /* justify-content: ; */
 }

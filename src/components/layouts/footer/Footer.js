@@ -10,7 +10,6 @@ export const Footer = () => {
         <div className="footer__container-contact">
           <div className="footer__container-logo">
             <div className="footer__square-red">
-              {" "}
               <img src={ImageLogoSign} alt="logo" />
             </div>
             <img className="footer_logo" src={ImageLogo} />
@@ -19,7 +18,7 @@ export const Footer = () => {
             <p className="footer__p-contact-text">
               Прием заказов: +375 29 321 00 00, +375 33 321 00 00
             </p>
-            {/* <p className="footer__p-contact-text">+375 33 321 00 00</p> */}
+
             <p className="footer__p-contact-text">
               E-mail: feedback@sushivesla.by
             </p>
@@ -27,7 +26,6 @@ export const Footer = () => {
         </div>
         <div className="footer-address">
           <p>Адреса OOO “Кузница вкуса”:</p>
-
           <p className="footer-p-address">
             г.Минск, пр. Машерова, 78 (11.00-23.00)
           </p>
@@ -78,7 +76,6 @@ export const Footer = () => {
             220036, г. Минск, ул. К. Либкнехта, 45-17а
           </p>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

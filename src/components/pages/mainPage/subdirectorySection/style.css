@@ -50,10 +50,6 @@
   text-align: center;
 }
 
-/* .main-page__img-subdirectory {
-  width: 100%;
-} */
-
 .main-page__img-subdirectory-item {
   background: #ffffff;
   box-sizing: border-box;
@@ -164,6 +160,10 @@
 }
 
 .cart-items__p-counter {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
