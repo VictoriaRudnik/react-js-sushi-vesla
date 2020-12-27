@@ -9,7 +9,7 @@ import { ImageWithLazyLoad } from "../../../ImageWithLazyLoad";
 export const AdvertisementSlider = () => {
   const sliderSettings = {
     centerMode: true,
-    centerPadding: "120px",
+    centerPadding: "132px",
     focusOnSelect: true,
     infinite: true,
     slidesToShow: 1,

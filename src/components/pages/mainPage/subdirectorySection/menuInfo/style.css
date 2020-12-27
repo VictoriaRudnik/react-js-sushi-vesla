@@ -3,14 +3,16 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   border-radius: 16.3628px;
-  width: 15%;
+  width: 226px;
   min-width: 150px;
   height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 19px 1% 17px;
+  justify-content: space-between;
+  padding: 20px 27px 18px;
   margin-bottom: 12px;
+  
 }
 
 .main-page__item-text {
@@ -19,9 +21,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
-  margin: 18px 0 11px;
-}
+  text-align: center; 
+}   
 
 .menu-info__span-price {
   font-family: Montserrat;

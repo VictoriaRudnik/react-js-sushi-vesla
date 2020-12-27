@@ -17,7 +17,7 @@ export const MenuInfo = (props) => {
     <div className="main-page__subdirectory-item">
       {/* <img className="menu-info__img" src={img} /> */}
       <ImageWithLazyLoad
-        image={{ src: img, alt: "image", width: "100%", height: "170px" }}
+        image={{ src: img, alt: "image", width: "170px", height: "170px" }}
       />
       <p className="main-page__item-text">{name}</p>
       <p className="menu-info__p-price">

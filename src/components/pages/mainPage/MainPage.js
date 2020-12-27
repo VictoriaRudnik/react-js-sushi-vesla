@@ -104,12 +104,13 @@ export const MainPage = () => {
             deliveryTime="20 мин"
           />
           <BlockInfo img={Bike} deliveryType="Доставка" deliveryTime="60 мин" />
-        </div>
-        <div className="main-page__container-promocode">
+        {/* </div> */}
+        {/* <div className="main-page__container-promocode">
           <img className="main-page__img-promocode" src={Promocode} />
           <p className="main-page__p-promocode">Промокод</p>
-        </div>
-        <div className="main-page__container-coins">
+        </div> */}
+        {/* <div className="main-page__container-coins"> */}
+          <Button img={Promocode} label="Промокод" />
           <Button img={CoinsImage} label="Суши-койны" />
           <Button img={PresentImage} label="Подарки" />
         </div>

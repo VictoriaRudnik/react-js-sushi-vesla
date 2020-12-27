@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../../../img/logo.JPG";
+import ImageLogo from "../../../img/logo.png"
+import ImageLogoSign from "../../../img/logo1.png"
 import Language from "../../../img/Language.png";
 import User from "../../../img/User.png";
 import Call from "../../../img/Call.png";
@@ -10,11 +12,13 @@ export const Header = (props) => {
   const { setIsLocationModalVisible } = props;
   return (
     <header className="container_header">
+    <div className="header-wrapper">
       {/* //<div className="container_header"> */}
       <div className="header__container-logo">
-        <img className="header_logo" src={Logo} />
-      </div>
-      <div className="container_menu">
+        <div className="header__square-red"> <img src={ImageLogoSign} alt="logo"/></div>
+        <img className="header_logo" src={ImageLogo} />
+      {/* </div>
+      <div className="container_menu"> */}
         <p className="menu">Меню</p>
         <p className="menu">Акции</p>
         <p className="menu">Новости</p>
@@ -25,7 +29,7 @@ export const Header = (props) => {
       <div className="header_container-search">
         <div className="header_container-number">
           <a className="header__p-number" href="tel:+375293210000">
-            <img className="header__img" src={Call} />
+            <img className="header__img-call" src={Call} />
           </a>
           <a className="header__p-number" href="tel:+375293210000">
             <p>+375 (29) 321 00 00</p>
@@ -39,8 +43,8 @@ export const Header = (props) => {
             <input className="header__input" placeholder="Поиск"></input>
           </div>
         </div>
-      </div>
-      <div className="container_login">
+      {/* </div>
+      <div className="container_login"> */}
         <img className="header__img" src={Language} />
         <img
           className="header__img-focus"
@@ -48,6 +52,9 @@ export const Header = (props) => {
           onClick={() => setIsLocationModalVisible(true)}
         />
       </div>
+    </div>
+    <div className="header__line"></div>
     </header>
+
   );
 };
