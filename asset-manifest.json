@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-js-sushi-vesla/static/css/main.b2c0fa82.chunk.css",
-    "main.js": "/react-js-sushi-vesla/static/js/main.91960c1b.chunk.js",
-    "main.js.map": "/react-js-sushi-vesla/static/js/main.91960c1b.chunk.js.map",
+    "main.css": "/react-js-sushi-vesla/static/css/main.df9bfe61.chunk.css",
+    "main.js": "/react-js-sushi-vesla/static/js/main.bd4b3748.chunk.js",
+    "main.js.map": "/react-js-sushi-vesla/static/js/main.bd4b3748.chunk.js.map",
     "runtime-main.js": "/react-js-sushi-vesla/static/js/runtime-main.8e4bdfe9.js",
     "runtime-main.js.map": "/react-js-sushi-vesla/static/js/runtime-main.8e4bdfe9.js.map",
     "static/css/2.f57117b2.chunk.css": "/react-js-sushi-vesla/static/css/2.f57117b2.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.47c71cc5.chunk.js.map": "/react-js-sushi-vesla/static/js/3.47c71cc5.chunk.js.map",
     "index.html": "/react-js-sushi-vesla/index.html",
     "static/css/2.f57117b2.chunk.css.map": "/react-js-sushi-vesla/static/css/2.f57117b2.chunk.css.map",
-    "static/css/main.b2c0fa82.chunk.css.map": "/react-js-sushi-vesla/static/css/main.b2c0fa82.chunk.css.map",
+    "static/css/main.df9bfe61.chunk.css.map": "/react-js-sushi-vesla/static/css/main.df9bfe61.chunk.css.map",
     "static/js/2.a4b2477c.chunk.js.LICENSE.txt": "/react-js-sushi-vesla/static/js/2.a4b2477c.chunk.js.LICENSE.txt",
     "static/media/banner.f891da2b.png": "/react-js-sushi-vesla/static/media/banner.f891da2b.png",
     "static/media/car.feaa7163.JPG": "/react-js-sushi-vesla/static/media/car.feaa7163.JPG",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.8e4bdfe9.js",
     "static/css/2.f57117b2.chunk.css",
     "static/js/2.a4b2477c.chunk.js",
-    "static/css/main.b2c0fa82.chunk.css",
-    "static/js/main.91960c1b.chunk.js"
+    "static/css/main.df9bfe61.chunk.css",
+    "static/js/main.bd4b3748.chunk.js"
   ]
 }
