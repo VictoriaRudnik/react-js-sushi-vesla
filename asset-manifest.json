@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/react-js-sushi-vesla/static/css/main.3d3fb26e.chunk.css",
-    "main.js": "/react-js-sushi-vesla/static/js/main.21d2b536.chunk.js",
-    "main.js.map": "/react-js-sushi-vesla/static/js/main.21d2b536.chunk.js.map",
-    "runtime-main.js": "/react-js-sushi-vesla/static/js/runtime-main.88ae683b.js",
-    "runtime-main.js.map": "/react-js-sushi-vesla/static/js/runtime-main.88ae683b.js.map",
+    "main.css": "/react-js-sushi-vesla/static/css/main.b2c0fa82.chunk.css",
+    "main.js": "/react-js-sushi-vesla/static/js/main.91960c1b.chunk.js",
+    "main.js.map": "/react-js-sushi-vesla/static/js/main.91960c1b.chunk.js.map",
+    "runtime-main.js": "/react-js-sushi-vesla/static/js/runtime-main.8e4bdfe9.js",
+    "runtime-main.js.map": "/react-js-sushi-vesla/static/js/runtime-main.8e4bdfe9.js.map",
     "static/css/2.f57117b2.chunk.css": "/react-js-sushi-vesla/static/css/2.f57117b2.chunk.css",
-    "static/js/2.b6968d07.chunk.js": "/react-js-sushi-vesla/static/js/2.b6968d07.chunk.js",
-    "static/js/2.b6968d07.chunk.js.map": "/react-js-sushi-vesla/static/js/2.b6968d07.chunk.js.map",
-    "static/js/3.11708eaa.chunk.js": "/react-js-sushi-vesla/static/js/3.11708eaa.chunk.js",
-    "static/js/3.11708eaa.chunk.js.map": "/react-js-sushi-vesla/static/js/3.11708eaa.chunk.js.map",
+    "static/js/2.a4b2477c.chunk.js": "/react-js-sushi-vesla/static/js/2.a4b2477c.chunk.js",
+    "static/js/2.a4b2477c.chunk.js.map": "/react-js-sushi-vesla/static/js/2.a4b2477c.chunk.js.map",
+    "static/js/3.47c71cc5.chunk.js": "/react-js-sushi-vesla/static/js/3.47c71cc5.chunk.js",
+    "static/js/3.47c71cc5.chunk.js.map": "/react-js-sushi-vesla/static/js/3.47c71cc5.chunk.js.map",
     "index.html": "/react-js-sushi-vesla/index.html",
     "static/css/2.f57117b2.chunk.css.map": "/react-js-sushi-vesla/static/css/2.f57117b2.chunk.css.map",
-    "static/css/main.3d3fb26e.chunk.css.map": "/react-js-sushi-vesla/static/css/main.3d3fb26e.chunk.css.map",
-    "static/js/2.b6968d07.chunk.js.LICENSE.txt": "/react-js-sushi-vesla/static/js/2.b6968d07.chunk.js.LICENSE.txt",
-    "static/media/banner.2fbc8675.png": "/react-js-sushi-vesla/static/media/banner.2fbc8675.png",
+    "static/css/main.b2c0fa82.chunk.css.map": "/react-js-sushi-vesla/static/css/main.b2c0fa82.chunk.css.map",
+    "static/js/2.a4b2477c.chunk.js.LICENSE.txt": "/react-js-sushi-vesla/static/js/2.a4b2477c.chunk.js.LICENSE.txt",
+    "static/media/banner.f891da2b.png": "/react-js-sushi-vesla/static/media/banner.f891da2b.png",
     "static/media/car.feaa7163.JPG": "/react-js-sushi-vesla/static/media/car.feaa7163.JPG",
     "static/media/coins.8e296bd6.JPG": "/react-js-sushi-vesla/static/media/coins.8e296bd6.JPG",
-    "static/media/logo.eee787ac.JPG": "/react-js-sushi-vesla/static/media/logo.eee787ac.JPG",
     "static/media/maki.763adc79.png": "/react-js-sushi-vesla/static/media/maki.763adc79.png",
     "static/media/menuDinner.66509109.png": "/react-js-sushi-vesla/static/media/menuDinner.66509109.png",
     "static/media/nigiri.3ef0cec3.png": "/react-js-sushi-vesla/static/media/nigiri.3ef0cec3.png",
@@ -27,10 +26,10 @@
     "static/media/uraMaki.e0193191.png": "/react-js-sushi-vesla/static/media/uraMaki.e0193191.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.88ae683b.js",
+    "static/js/runtime-main.8e4bdfe9.js",
     "static/css/2.f57117b2.chunk.css",
-    "static/js/2.b6968d07.chunk.js",
-    "static/css/main.3d3fb26e.chunk.css",
-    "static/js/main.21d2b536.chunk.js"
+    "static/js/2.a4b2477c.chunk.js",
+    "static/css/main.b2c0fa82.chunk.css",
+    "static/js/main.91960c1b.chunk.js"
   ]
 }
