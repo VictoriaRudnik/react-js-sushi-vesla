@@ -172,6 +172,7 @@
 .menu__burger-middle {
   border: 1.25px solid black;
   width: 30px;
+  background: black;
 }
 
 .mobile-header__container {
@@ -206,6 +207,7 @@
 
 .mobile-header__line {
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  
   margin: 0 20px;
   position: fixed;
   top: 122px;
