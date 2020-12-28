@@ -194,5 +194,8 @@
   .main-page__container-subdirectory-section {
     width: 100%;
   }
+  .main-page__container-cart {
+    margin-left: 0;
+  }
   
 }

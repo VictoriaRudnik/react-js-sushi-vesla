@@ -143,6 +143,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .footer__container-flex{
+    margin: 0 20px;
+  }
   .footer__container-flex, .footer__container-contact {
     flex-direction: column;
   }
@@ -159,6 +162,9 @@
   }
   .footer__container-second {
     display: none;
+  }
+  .footer__container-contact{
+    align-items: flex-start;
   }
 
 }
