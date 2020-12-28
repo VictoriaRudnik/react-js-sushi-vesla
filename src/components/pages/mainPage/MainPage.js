@@ -25,8 +25,7 @@ export const MainPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [isLocationModalVisible, setIsLocationModalVisible] = useState(false);
   const { width } = useWindowSize();
-  console.log("WIID", width);
-
+  
   const addItemToCart = (item) => {
     const isItemAlreadyInCart = cartItems.find(
       (cartItem) => cartItem.id === item.id
