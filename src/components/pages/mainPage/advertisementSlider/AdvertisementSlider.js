@@ -4,7 +4,6 @@ import SliderImage from "../../../../img/slider.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ImageWithLazyLoad } from "../../../ImageWithLazyLoad";
 
 export const AdvertisementSlider = () => {
   const sliderSettings = {
@@ -23,7 +22,7 @@ export const AdvertisementSlider = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          centerMode: false
+          centerMode: false,
         },
       },
       {
@@ -32,7 +31,7 @@ export const AdvertisementSlider = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          centerMode: false
+          centerMode: false,
         },
       },
     ],
