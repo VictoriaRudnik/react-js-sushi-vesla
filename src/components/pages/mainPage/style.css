@@ -154,6 +154,19 @@
   }
 }
 
+@media screen and (max-width: 1550px) {
+  .main-page__container-products {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .menu-info__container {
+    margin-right: 8px;
+  }
+  .main-page__img-subdirectory-item {
+    display: none !important ;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .main-page__container-products {
     flex-wrap: nowrap;
