@@ -12,11 +12,11 @@
 }
 
 .slick-slide.slick-active {
-  opacity: 100%
+  opacity: 1
 }
 
 .slick-slide {
-  opacity: 40%
+  opacity: 0.4
 }
 
 @media screen and (max-width: 850px) {
