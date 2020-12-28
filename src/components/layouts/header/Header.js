@@ -31,7 +31,7 @@ export const Header = (props) => {
               <img className="header__img-call" src={Call} />
             </a>
             <a className="header__p-number" href="tel:+375293210000">
-              <p>+375 (29) 321 00 00</p>
+              <p className="header__p-number-tel">+375 (29) 321 00 00</p>
             </a>
           </div>
           <div className="header__container-input-img">
@@ -47,6 +47,9 @@ export const Header = (props) => {
             src={User}
             onClick={() => setIsLocationModalVisible(true)}
           />
+        </div>
+        <div className="menu__burger">
+          <div className="menu__burger-middle"></div>
         </div>
       </div>
       <div className="header__line"></div>

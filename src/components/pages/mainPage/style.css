@@ -135,3 +135,43 @@
 .main-page__modal-img {
   height: 120px;
 }
+
+@media screen and (max-width: 1680px) {
+  .main-page__container-input-img {
+    max-width: 600px;
+  }
+  .main-page__button-coins {
+    max-width: 170px;
+  }
+  .menu-info__container {
+    max-width: 90px;
+  }
+  .main-page__subdirectory-item {
+    max-width: 220px;
+  }
+  .footer__container-contact-text {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main-page__container-products {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .menu-info__container {
+    margin-right: 8px;
+  }
+  .main-page__img-subdirectory-item {
+    display: none !important ;
+  }
+}
+
+@media screen and (max-width: 850px) {
+.main-page__container-information, .main-page__container-products {
+  margin: 20px 20px 0;
+}
+.main-page__container-products{
+  margin-top: 40px;
+}  
+}

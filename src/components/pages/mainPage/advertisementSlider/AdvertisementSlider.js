@@ -16,6 +16,17 @@ export const AdvertisementSlider = () => {
     slidesToScroll: 1,
     speed: 500,
     className: "carousel--container",
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          centerMode: false
+        },
+      },
+    ],
   };
 
   return (

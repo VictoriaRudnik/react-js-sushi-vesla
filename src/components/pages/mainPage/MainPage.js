@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Header } from "../../layouts/header/Header";
+import { MobileHeader } from "../../layouts/header/MobileHeader";
 import SearchGroup from "../../../img/search-group.png";
 import Clock from "../../../img/clock.png";
 import Bike from "../../../img/bike.png";
@@ -18,10 +19,13 @@ import { AdvertisementSlider } from "./advertisementSlider/AdvertisementSlider";
 import { Modal } from "../../common/modal";
 import { ImageWithLazyLoad } from "../../ImageWithLazyLoad";
 import ImageCar from "../../../img/car.JPG";
+import { useWindowSize } from "../../../hooks/useWindowSize";
 
 export const MainPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [isLocationModalVisible, setIsLocationModalVisible] = useState(false);
+  const { width } = useWindowSize();
+  console.log("WIID", width);
 
   const addItemToCart = (item) => {
     const isItemAlreadyInCart = cartItems.find(
@@ -84,8 +88,12 @@ export const MainPage = () => {
   ];
 
   return (
-    <div>
-      <Header setIsLocationModalVisible={setIsLocationModalVisible} />
+    <>
+      {width <= 850 ? (
+        <MobileHeader />
+      ) : (
+        <Header setIsLocationModalVisible={setIsLocationModalVisible} />
+      )}
       <AdvertisementSlider />
       <div className="main-page__container-information">
         <div className="main-page__container-input-img">
@@ -141,6 +149,6 @@ export const MainPage = () => {
           </div>
         </div>
       </Modal>
-    </div>
+    </>
   );
 };
