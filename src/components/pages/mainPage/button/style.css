@@ -32,3 +32,12 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 850px) {
+   .button__label {
+    display: none;
+  }
+  .main-page__img-coins {
+    margin: 0;
+  }
+}

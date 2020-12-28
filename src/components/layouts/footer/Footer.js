@@ -5,6 +5,7 @@ import ImageLogoSign from "../../../img/logo1.png";
 
 export const Footer = () => {
   return (
+    <div className="footer__container-flex">
     <div className="footer__container">
       <div className="footer__container-first">
         <div className="footer__container-contact">
@@ -77,6 +78,8 @@ export const Footer = () => {
           </p>
         </div>
       </div>
+    </div>
+
     </div>
   );
 };

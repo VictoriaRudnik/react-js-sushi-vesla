@@ -179,3 +179,20 @@
 .cart-order-button-img {
   margin-right: 8px;
 }
+
+
+@media screen and (max-width: 850px) {
+  .main-page__container-subdirectory {
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 20px 0;
+  }
+  .main-page__container-subdirectory-item{
+    justify-content: center;
+  }
+  .main-page__container-cart,
+  .main-page__container-subdirectory-section {
+    width: 100%;
+  }
+  
+}

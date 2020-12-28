@@ -168,10 +168,11 @@
 }
 
 @media screen and (max-width: 850px) {
-.main-page__container-information, .main-page__container-products {
-  margin: 20px 20px 0;
-}
-.main-page__container-products{
-  margin-top: 40px;
-}  
+  .main-page__container-information,
+  .main-page__container-products {
+    margin: 20px 20px 0;
+  }
+  .main-page__container-products {
+    margin-top: 40px;
+  }
 }

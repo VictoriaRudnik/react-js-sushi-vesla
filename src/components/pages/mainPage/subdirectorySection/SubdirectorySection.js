@@ -30,6 +30,7 @@ const menuItem = [
 export const SubdirectorySection = (props) => {
   const { cartItems, addItemToCart, removeItemFromCart } = props;
   return (
+    <>
     <div className="main-page__container-subdirectory">
       <div className="main-page__container-subdirectory-section">
         <div className="main-page__container-filters">
@@ -56,7 +57,7 @@ export const SubdirectorySection = (props) => {
             <img className="main-page__img-subdirectory" src={ImageBaner} />
           </div>
         </div>
-        <Footer />
+       
       </div>
       <div className="main-page__container-cart">
         <div className="main-page__cart-sticky">
@@ -104,5 +105,7 @@ export const SubdirectorySection = (props) => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
